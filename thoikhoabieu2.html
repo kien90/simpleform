@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng đơn giản</title>
+    <style>
+        body {padding: 5px;}
+        h1 {text-align: center; color: blue;}
+        .grid-container {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        width: 500px;
+                        margin: auto;
+                        color: royalblue;
+                        height: 50px;
+                        }
+        .grid-iterm { padding: 3px;
+                    }
+        table {
+                border-collapse: collapse;
+                margin-top: 40px;
+                margin: auto;
+            }
+        th,td {border:1px solid black;
+                padding: 5px;
+                height: 20px;
+                width: 110px;
+                 }  
+        .td-width {
+            text-align: center;
+            width: auto;
+        }  
+    </style>
+</head>
+<body>
+    <h1>THỜI KHÓA BIỂU</h1>
+    <div class="grid-container">
+        <div class="grid-iterm">Lớp: T0908I </div>
+        <DIV class="grid-iterm" style="text-align: right;">Thời gian học: 13h30-17h30 </DIV>
+        <div class="grid-iterm">Giáo viên: KhoaNV </div>
+        <div class="grid-iterm" style="text-align: right;">Ngày học: Thứ 3,5,7 </div>
+        <div class="grid-iterm">Phòng học: Class3/Lab3</div>
+    </div>
+    <br> <br>
+    <table>
+        <tr>
+            <th colspan="3"></th>
+            <th style="background-color:yellow;">Thứ 3</th>
+            <th style="background-color:yellow;">Thứ 5</th>
+            <th style="background-color:yellow;">Thứ 7</th>
+        </tr>
+        <tr style="background-color: orange;">
+            <th class="td-width">Tuần</th>
+            <th>Ngày bắt đầu</th>
+            <th>Ngày kết thúc</th>
+            <th colspan="3">Môn học</th>
+        </tr>
+        <tr>
+            <td class="td-width">01</td>
+            <td>01/09/2009</td>
+            <td>05/09/2009</td>
+            <td>CF-T1,L1</td>
+            <td>CF-T2,L2</td>
+            <td>CF-T3,L3</td>
+        </tr>
+        <tr>
+            <td class="td-width">02</td>
+            <td>08/09/2009</td>
+            <td>12/09/2009</td>
+            <td>CF-T4,L4</td>
+            <td>CF-Written Test</td>
+            <td>C-T1,L1</td>
+        </tr>
+        <tr>
+            <td class="td-width">03</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>....</td>
+            <td>...</td>
+        </tr>
+    </table>
+</body>
+</html>
