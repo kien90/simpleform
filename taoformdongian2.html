@@ -5,36 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tạo bảng đơn giản</title>
+    <style>
+        body { background-color: rgb(247, 243, 238);
+        }
+        .login { width: 500px;
+                height: 500px;
+                background-color: rgb(245, 225, 148);
+                color: blue;
+        }
+        h3 {
+            background-color: rgb(174, 236, 236);
+            color: blue;
+margin-left: 5px;  
+margin-top: 5px;  
+margin-right: 5px;                }
+        .container {
+            margin: 10px 10px;
+
+        }
+        .iterm { margin-left: 60px;}
+        
+    </style>
 </head>
 <body>
     <div class="login">
-    <h3>ĐĂNG KÝ HỌC VIÊN</h3>
-    <div class="grid-container">
+    <div><h3>ĐĂNG KÝ HỌC VIÊN</h3></div>
+    <div class="container">
         <form action="" method="POST">
             <label  for="name">Họ và tên
-                <input class="grid-iterm" type="text" name="name" size="35px">
+                <input class="iterm" type="text" name="name" size="35px">
             </label>
                 <br><br>
             <label for="Birthday">Ngày sinh
-                <input class="grid-iterm" type="text" name="birthday" size="20px">
+                <input class="iterm" type="text" name="birthday" size="20px">
             </label>
             <br> <br>
-            <label for="gender">Giới tính
-                <input class="grid-iterm" type="radio">Nam 
-                <input class="grid-iter" type="radio" >Nữ 
+            <label style="color: blue;" for="gender">Giới tính
+                <input style="margin-left: 68px" type="radio" name="gender">Nam 
+                <input type="radio" name="gender" >Nữ 
             </label>
             <br><br>
             <label for="address">Địa chỉ
-                <textarea class="grid-iterm" row=3; cols="35"></textarea>
+                <input style="margin-left: 79px;" width="50px" height="50px" s class="iterm" type="text"/>
             </label>
             <br><br>
-            <label for="class">Lớp 
-                <select name="class" id="class">
-
-                    <option value="Thứ 3">-Chọn lớp-</option>
+            <label style="text-align: center;" for="class">Lớp 
+                <select style="margin-left: 95px;width: 130px;"  name="class" id="class">
+                    <option  value="Choose a class">-Chọn lớp-</option>
                 </select>
             </label>
-
+            <br><br>
+            <label for="email">Email
+                <input style="margin-left: 87px;" class="iterm" type="email" />
+            </label>
+            <br><br>
+            <label for="phone">Điện thoại 
+                <input style="margin-left: 59px;" class="iterm" type="text"/>
+            </label>
+            <br><br>
+            <label style="margin-left: 120px" for="submit">
+                <input  type="submit" value="Đăng ký "/>
+                <input type="reset" value="Nhập lại"/> 
+            </label>
+            </form>
+            </div>
+            </div>
         </form>
         
     </div>
